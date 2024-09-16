@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANU</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white w-full overflow-hidden">
+    <div
+      class="bg-blue-400 w-52 h-52 absolute top-1/2 -translate-y-1/2 rounded-full blur-xl left-1/4 -translate-x-1/2"
+    ></div>
+    <div
+      class="hidden md:block bg-pink-400 w-80 h-80 absolute right-1/3 translate-x-1/2 top-1/3 -translate-y-1/2 rounded-full blur-xl"
+    ></div>
+    <div
+      class="bg-violet-400 w-20 h-20 absolute right-20 bottom-20 rounded-full blur-xl"
+    ></div>
+
+    <section
+      id="hero"
+      class="h w-full h-screen flex items-center justify-center relative z-10 px-2"
+    >
+      <div
+        class="bg-slate-500/10 border border-slate-600 p-4 backdrop-blur-sm w-full md:w-1/2 min-h-1/2 rounded-md shadow-xl flex flex-col justify-between space-y-6 items-center"
+      >
+        <div class="w-full flex items-center justify-center">
+          <h1 class="text-3xl font-bold">CEK KHODAM KAMU</h1>
+        </div>
+
+        <div class="w-full space-y-2">
+          <div id="output" class="hidden p-2 rounded-md bg-green-500/80"></div>
+          <input
+            id="input"
+            type="text"
+            placeholder="Masukan nama kamu..."
+            class="w-full bg-slate-500/80 p-2 py-4 rounded-md outline-none focus:outline-dotted focus:outline-blue-300"
+          />
+          <button
+            id="btn"
+            class="w-full p-2 bg-blue-300 transition-colors duration-300 hover:bg-blue-400 rounded-md text-black text-lg font-semibold"
+          >
+            SUBMIT
+          </button>
+        </div>
+        <div class="font-light">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+            commodi modi assumenda voluptas quia delectus quasi repudiandae
+            iusto minima ex rerum numquam nisi laudantium tenetur voluptatibus
+            nihil reprehenderit id nemo.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="khodam.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
